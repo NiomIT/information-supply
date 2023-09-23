@@ -61,7 +61,6 @@ userCroseIcon.addEventListener("click", () => {
 
 // setting icon function start //
 faSliders.addEventListener("click", () => {
-  console.log("Button Clicked");
   settingsModalDiv.style.display = "block";
 });
 
@@ -72,13 +71,11 @@ modalCloseButton.addEventListener("click", function () {
 
 // Comment Button function Start //
 commentButton.addEventListener("click", () => {
-  console.log("comment btn start");
   commentModalParentDiv.style.display = "block";
   body.style.filter = "blur(3px)";
 });
 
 commentModalCloseBtn.addEventListener("click", () => {
-  console.log("modal Close btn clicked");
   commentModalParentDiv.style.display = "none";
   body.style.filter = "blur(0px)";
 });
@@ -103,7 +100,6 @@ const reportModalParentDiv = document.getElementById("report-modal-parent-div");
 const reportCroseIcon = document.getElementById("report-crose-icon");
 
 reportButton.addEventListener("click", () => {
-  console.log("btn clicked");
   reportModalParentDiv.style.display = "block";
   body.style.filter = "blur(3px)";
 });
@@ -129,3 +125,20 @@ areaCroseIcon.addEventListener("click", () => {
   body.style.filter = "blur(0px)";
 });
 // Area Code End //
+
+// Country All Modal Start //
+const countryAll = document.getElementById("country-all");
+const countryAllParentDiv = document.getElementById("country-all-parent-div");
+
+const countryCrossBtn = document.getElementById("country-cross-btn");
+
+countryAll.addEventListener("click", () => {
+  countryAllParentDiv.style.display = "block";
+  body.style.filter = "blur(3px)";
+});
+
+countryCrossBtn.addEventListener("click", () => {
+  countryAllParentDiv.style.display = "none";
+  body.style.filter = "blur(0px)";
+});
+// Country All Modal End //
