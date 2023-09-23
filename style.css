@@ -113,6 +113,9 @@
   padding: 20px;
   border: none;
 }
+input[type="file"] {
+  display: none;
+}
 .fas {
   font-size: 20px;
 }
@@ -633,6 +636,7 @@
     padding: 20px;
     border: none;
   }
+
   .fas {
     font-size: 20px;
   }
