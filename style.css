@@ -1,0 +1,581 @@
+#body {
+  position: arelative;
+}
+.two-nav-in-one-cart {
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 0px;
+  padding: 15px;
+}
+.border {
+  border-bottom: 3px solid red;
+}
+
+.user-img {
+  width: 40px;
+  height: 57px;
+  margin-top: 2px;
+}
+.blank-div {
+  height: 2px;
+  background-color: red;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.cart-header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.cart-header-first-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading-small-text {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.icon-and-text-div {
+  font-size: 12px;
+  margin-top: -20px;
+}
+.new-post-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  margin: auto;
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: rgb(200, 239, 255);
+  margin-bottom: -20px;
+}
+.user-name {
+  font-size: 25px;
+  color: rgb(1, 183, 255);
+}
+.post-date {
+  font-size: 10px;
+  color: gray;
+}
+/*  */
+.cart-paragraph {
+  line-height: 23px;
+  margin-top: -20px;
+}
+.see-more {
+  text-decoration: none;
+  color: rgb(4, 178, 247);
+  font-weight: 500;
+}
+.cart-img-div {
+  background-color: rgb(241, 239, 239);
+  text-align: center;
+}
+.cart-img-div img {
+  width: 400px;
+  height: 500px;
+}
+
+.search-container {
+}
+.in-div {
+  background-color: rgb(233, 232, 232);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+.in-div h1 {
+  color: red;
+  margin-top: 15px;
+}
+.search-input-div {
+  display: flex;
+  width: 100%;
+}
+.search-input {
+  width: 80%;
+  padding: 20px;
+  border: 2px solid rgb(235, 234, 234);
+}
+.search-button {
+  padding: 20px;
+  border: none;
+}
+.fas {
+  font-size: 20px;
+}
+.bell-icon-div {
+  padding: 20px;
+  background-color: rgb(231, 229, 229);
+  margin-left: 25px;
+  cursor: pointer;
+}
+.plane-icon-div {
+  padding: 20px;
+  background-color: rgb(231, 229, 229);
+  margin-left: 25px;
+}
+.setting-icon-div {
+  padding: 20px;
+  background-color: rgb(231, 229, 229);
+}
+/*  */
+
+.fa-share-btn {
+  padding: 20px;
+  background-color: rgb(231, 229, 229);
+
+  border: none;
+}
+.all-like-comment-report-btn-div {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 10px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(202, 240, 255);
+}
+.comment-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 10px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(192, 252, 232);
+}
+.report-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 10px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(252, 162, 162);
+}
+
+.search-input-div-two {
+  margin-left: 10px;
+}
+
+/* Style for Modal */
+
+/* Setting modal start */
+.settings-modal-div {
+  width: 40%;
+  background-color: white;
+  box-shadow: 5px 5px 100px rgb(197, 197, 197);
+  padding: 20px;
+  margin-left: auto;
+  margin-bottom: -190px;
+  z-index: 1;
+  position: relative;
+  display: none;
+}
+
+.modal-close-button {
+  text-align: right;
+  font-size: 40px;
+  margin-top: -30px;
+  margin-right: -20px;
+  cursor: pointer;
+}
+.settings-modal-div button {
+  text-decoration: none;
+  color: rgb(6, 184, 255);
+  font-weight: 800;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.modal-area-p {
+  color: rgb(161, 161, 161);
+  font-weight: 500;
+  cursor: pointer;
+}
+/* Setting modal end */
+
+/* Notification modal start */
+.notification-modal {
+  display: none;
+  width: 85%;
+  margin: auto;
+  margin-top: -760px;
+  position: relative;
+  z-index: 1s;
+}
+.notification-body-parent-div {
+  background-color: white;
+  height: 500px;
+  overflow: scroll;
+  padding: 15px;
+}
+.notification-modal-with-close-btn-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+  margin-top: 30px;
+  height: 20px;
+  padding: 5px;
+}
+.notification {
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.notification-modal-close-btn {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 600;
+}
+.notification-body-modal-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.notification-modal-h4 {
+  font-size: 20px;
+  color: rgb(0, 183, 255);
+  font-weight: 700;
+}
+.notification-modal-date {
+  font-size: 12px;
+  color: gray;
+}
+.comment {
+  color: rgb(23, 255, 23);
+}
+.notification-modal-paragraph {
+  margin-top: -15px;
+  font-size: 14px;
+  color: gray;
+}
+.notification-circle {
+  color: rgb(0, 183, 255);
+}
+/* Notification modal End */
+
+/* Comment Modal Style Start */
+.comment-modal-first-all-user-container {
+  height: 550px;
+  overflow: scroll;
+}
+.comment-modal-parent-div {
+  width: 85%;
+  background-color: white;
+  margin: auto;
+  box-shadow: 5px 10px 5px 5px rgb(109, 108, 108);
+  margin-top: -750px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+.close-btn-and-comment-i-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(219, 219, 219);
+  height: 3px;
+  padding: 10px;
+}
+.comment-and-icon-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.comment-modal-name {
+  font-size: 20px;
+}
+.comment-body-modal-div {
+  margin-top: -30px;
+  padding: 10px;
+}
+.comment-modal-text-div {
+  margin-top: 25px;
+}
+.comment-load-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.circle-arrow-icon {
+  font-size: 20px;
+  font-weight: 700;
+}
+/* comment modal footer start */
+.modal-footer-main-parent-div {
+  background-color: rgb(231, 230, 230);
+}
+.modal-footer-parent-div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.comment-modal-search-input {
+  height: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(231, 230, 230);
+  font-size: 18px;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 3px solid rgb(212, 212, 212);
+}
+.comment-footer-user-img {
+  width: 36px;
+}
+/* comment modal footer end */
+
+/* Comment Modal Style End */
+
+/* user modal start */
+.user-modal-parent-div {
+  width: 75%;
+  margin: auto;
+  box-shadow: 2px 1px 20px 1px rgb(145, 145, 145);
+  margin-top: -600px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  display: none;
+}
+.user-modal-button-div {
+  padding: 30px;
+}
+.user-modal-first-fex-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+  height: 10px;
+}
+.user-modal-second-fex-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-modal-user-icon {
+  font-size: 15px;
+}
+.account {
+  font-size: 15px;
+  font-weight: 700;
+}
+.user-modal-cros-icon {
+  font-size: 25px;
+}
+.user-modal-parent-div button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  border: 2px solid rgb(218, 217, 217);
+  border-radius: 30px;
+}
+
+.user-logo {
+  width: 30px;
+}
+/* user modal end */
+
+/* report modal start */
+.report-modal-parent-div {
+  width: 75%;
+  margin: auto;
+  box-shadow: 2px 1px 20px 1px rgb(145, 145, 145);
+  margin-top: -500px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+.report-write-and-send-div {
+  text-align: center;
+  background-color: white;
+  padding: 50px;
+}
+.report-input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid rgb(218, 217, 217);
+  height: 30px;
+  padding: 10px;
+}
+.report-send-btn {
+  width: 12%;
+  height: 53px;
+  padding: 10px;
+  border: 2px solid rgb(218, 217, 217);
+}
+/* report modal end */
+
+/* Area modal start */
+.area-modal-parent-div {
+  background-color: white;
+  box-shadow: 2px 1px 20px 1px rgb(145, 145, 145);
+  width: 75%;
+  margin: auto;
+  margin-top: -600px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+.area-modal-first-fex-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: rgb(241, 241, 241);
+  padding: 2px;
+  height: 25px;
+}
+.area-modal-second-fex-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5px;
+}
+.area-write-and-send-div {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+}
+.area-input {
+  width: 75%;
+  height: 20px;
+  padding: 10px;
+  border: 2px solid rgb(226, 226, 226);
+}
+.area-send-btn {
+  height: 43px;
+  width: 50px;
+  border: 2px solid rgb(226, 226, 226);
+}
+/* Area modal end */
+
+/* Country All Modal start */
+.country-all-parent-div {
+  width: 75%;
+  margin: auto;
+}
+.country-cross-flex-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(228, 227, 227);
+  height: 20px;
+  padding: 5px;
+}
+.country-cross-flex-child-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.country {
+  font-weight: 700;
+}
+.country-accroding-div {
+  width: 75%;
+  background-color: red;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+/* Country All Modal End */
+
+/* End Modal style */
+@media screen and (max-width: 850px) {
+  .search-container {
+  }
+  .in-div {
+    background-color: rgb(233, 232, 232);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+  }
+  .in-div h1 {
+    color: red;
+    margin-top: 15px;
+  }
+  .search-input-div {
+    display: flex;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 80%;
+    padding: 20px;
+    border: 2px solid rgb(235, 234, 234);
+  }
+  .search-button {
+    padding: 20px;
+    border: none;
+  }
+  .fas {
+    font-size: 20px;
+  }
+  .bell-icon-div {
+    padding: 20px;
+    background-color: rgb(231, 229, 229);
+    margin-left: 25px;
+  }
+  .plane-icon-div {
+    padding: 20px;
+    background-color: rgb(231, 229, 229);
+    margin-left: 25px;
+  }
+  .setting-icon-div {
+    padding: 20px;
+    cursor: pointer;
+    background-color: rgb(231, 229, 229);
+  }
+  .second-nav-img {
+  }
+  /*  */
+
+  .fa-share-btn {
+    padding: 20px;
+    background-color: rgb(231, 229, 229);
+
+    border: none;
+  }
+}

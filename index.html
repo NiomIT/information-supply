@@ -1,13 +1,682 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Information Supply</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="body">
+      <nav class="two-nav-in-one-cart">
+        <!-- First navigation start -->
+        <div class="search-container border">
+          <div class="in-div"><h1>IN</h1></div>
+          <div class="search-input-div">
+            <input
+              type="text"
+              class="search-input search-input-first"
+              placeholder="Search"
+            />
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+            <div id="bell-icon-div" class="bell-icon-div">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+          </div>
+          <div class="user-img-div">
+            <img
+            id="user-img"
+              class="user-img"
+              src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- First navigation end -->
 
-<h1>This website make world more accessible!</h1>
-<p>By: <a href="https://wa.me/+8801303002226">Moin</a></p>
+        <!-- Blank div start -->
+        <!-- <div class="blank-div"></div> -->
+        <!-- Blank div end -->
+      </nav>
 
-</body>
+      <!-- Cart div Start -->
+      <div>
+        <!-- Second navigation start -->
+        <div >
+          <div class="search-container">
+            <div>
+              <img
+                class="user-img second-nav-img"
+                src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt=""
+              />
+            </div>
+            <div class="search-input-div search-input-div-two">
+              <input type="text" class="search-input" placeholder="Type Post" />
+              <button class="search-button">
+                <i class="fas fa-solid fa-image"></i>
+              </button>
+              <div class="plane-icon-div">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+            </div>
+            <div id="fa-sliders" class="setting-icon-div">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+          </div>
+          <!-- Setting Button Modal Section Start -->
+          <div id="settings-modal-div" class="settings-modal-div">
+            <p id="modal-close-button" class="modal-close-button">&times;</p>
+            <p>Post View: <button id="recent-acctivety" href="">Recent Acctivety</button></p>
+            <hr />
+            <p>Country: <button id="country-all" href="">All</button></p>
+            <hr />
+            <p id="area-code" class="modal-area-p">Area Code:</p>
+          </div>
+          <!-- Setting Modal Section End -->
+        </div>
+
+        <!-- Second navigation end -->
+
+        <!-- Post button start -->
+        <button class="new-post-button">
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+          <p>43 new post</p>
+        </button>
+
+        <!-- Post button End -->
+        <div class="cart-header-section">
+          <div class="cart-header-first-div">
+            <div class="user-img-div">
+              <img
+                class="user-img"
+                src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt=""
+              />
+            </div>
+            <div class="heading-small-text-parent-div">
+              <h4 class="user-name">
+                Maimuna Islam Momena
+                <span class="post-date"> Post 29 june 23 at 4.31 pm</span>
+              </h4>
+              <div class="heading-small-text">
+                <div class="icon-and-text-div">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>1421, Bangladesh</span>
+                </div>
+                <div class="icon-and-text-div">
+                  <i class="fa-solid fa-arrow-trend-up"></i>
+                  <span>Internationally Treanding #1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="fa-share-btn">
+            <i class="fa-solid fa-share"></i>
+          </button>
+        </div>
+
+        <div>
+          <p class="cart-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            assumenda commodi facilis culpa vero unde, at numquam ab fugit
+            voluptatibus veritatis iste velit doloremque autem hic natus
+            cupiditate similique corporis eligendi quidem perferendis officiis.
+            Quisquam nihil id voluptas porro obcaecati! Enim exercitationem quia
+            fugit ullam minima illo aliquam magni aperiam natus delectus
+            repellendus assumenda, facilis cum ipsa dolores qui nemo impedit
+            labore iste esse ab! Aliquid mollitia maxime quidem dolorum
+            dignissimos dolorem itaque?<a href="" class="see-more">See More</a>
+          </p>
+          <div class="cart-img-div">
+            <img
+              src="https://i.pinimg.com/564x/be/33/76/be3376b0f835a1766cb7a95003ea4a7d.jpg"
+              alt=""
+            />
+          </div>
+          <div class="all-like-comment-report-btn-div">
+            <button id="like-button" class="like-button">
+              <i class="fa-solid fa-thumbs-up"></i><span>Like (<span id="like-text-count">232</span>)</span>
+            </button>
+            <button id="comment-button" class="comment-button">
+              <i class="fa-solid fa-comment-dots"></i><span>Comment (56)</span>
+            </button>
+            <button id="report-button"  class="report-button">
+              <i class="fa-solid fa-flag"></i><span>Report (9)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Cart div End -->
+    </div>
+    <!-- Notification Modal Start -->
+    <div id="notification-modal" class="notification-modal">
+      <div class="notification-modal-with-close-btn-div">
+        <div>
+          <i class="fa-solid fa-bell"></i>
+          <span class="notification">Notifications</span>
+        </div>
+        <p id="notification-close" class="notification-modal-close-btn">
+          &times;
+        </p>
+      </div>
+   <div class="notification-body-parent-div">
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+              Maimuna Islam Momena
+              <span class="notification-modal-date"
+                ><span class="comment">Comment</span> 29 june 23 at 4.31
+                pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+              Rashedul Khan
+              <span class="notification-modal-date">
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+              Yamm MOllik Tuki
+              <span class="notification-modal-date"></span>
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+              Tushar
+              <span class="notification-modal-date"><span class="comment">Comment</span>
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+           Viccky Das
+              <span class="notification-modal-date">
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+              Vbabna Ghosh
+              <span class="notification-modal-date">
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+             Chayti Rani Mondal
+              <span class="notification-modal-date">
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+              Yamm MOllik Tuki
+              <span class="notification-modal-date">
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <div>
+        <div class="notification-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div>
+            <h4 class="notification-modal-h4">
+              Yamm MOllik Tuki
+              <span class="notification-modal-date">
+                like 29 june 23 at 4.31 pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Filler text is text that shares some characteristics of a real
+              written text, but is random
+            </p>
+          </div>
+          <i class="fa-solid fa-circle notification-circle"></i>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    </div>
+    <!-- Notification Modal End -->
+    
+    <!-- Comment Modal Start -->
+    
+   <div id="comment-modal-parent-div" class="comment-modal-parent-div">
+     <div class="close-btn-and-comment-i-div">
+      <div class="comment-and-icon-div">
+        <i class="fa-solid fa-comment"></i>
+        <p class="comment-modal-name">Comment</p>
+      </div>
+       <p id="comment-modal-close-btn" class="notification-modal-close-btn">&times;</p>
+     </div>
+
+     <div class="comment-modal-first-all-user-container">
+       <!--  -->
+       <div class="comment-modal-container">
+        <div class="notification-body-modal-div comment-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div class="comment-modal-text-div">
+            <h4 class="notification-modal-h4">
+              Maimuna Islam Momena
+              <span class="notification-modal-date"
+                ><span class="comment">Comment</span> 29 june 23 at 4.31
+                pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore sapiente eveniet id ipsum neque illo quae commodi nulla optio velit, consequuntur quo eaque enim nam eligendi veniam minus voluptatum facere unde doloribus. Architecto recusandae sequi repellat earum officiis unde placeat soluta, est nisi exercitationem veritatis perferendis, obcaecati odit qui.
+            </p>
+          </div>
+          <i class="fa-solid fa-flag"></i>
+        </div>
+      </div>
+      <!--  -->
+       <!--  -->
+       <div>
+        <div class="notification-body-modal-div comment-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div class="comment-modal-text-div">
+            <h4 class="notification-modal-h4">
+              Maimuna Islam Momena
+              <span class="notification-modal-date"
+                ><span class="comment">Comment</span> 29 june 23 at 4.31
+                pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore sapiente eveniet id ipsum neque illo quae commodi nulla optio velit, consequuntur quo eaque enim nam eligendi veniam minus voluptatum facere unde doloribus. Architecto recusandae sequi repellat earum officiis unde placeat soluta, est nisi exercitationem veritatis perferendis, obcaecati odit qui.
+            </p>
+          </div>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+      <!--  -->
+       <!--  -->
+       <div>
+        <div class="notification-body-modal-div comment-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div class="comment-modal-text-div">
+            <h4 class="notification-modal-h4">
+              Maimuna Islam Momena
+              <span class="notification-modal-date"
+                ><span class="comment">Comment</span> 29 june 23 at 4.31
+                pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore sapiente eveniet id ipsum neque illo quae commodi nulla optio velit, consequuntur quo eaque enim nam eligendi veniam minus voluptatum facere unde doloribus. Architecto recusandae sequi repellat earum officiis unde placeat soluta, est nisi exercitationem veritatis perferendis, obcaecati odit qui.
+            </p>
+          </div>
+          <i class="fa-solid fa-flag"></i>
+        </div>
+      </div>
+      <!--  -->
+       <!--  -->
+       <div>
+        <div class="notification-body-modal-div comment-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div class="comment-modal-text-div">
+            <h4 class="notification-modal-h4">
+              Maimuna Islam Momena
+              <span class="notification-modal-date"
+                ><span class="comment">Comment</span> 29 june 23 at 4.31
+                pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore sapiente eveniet id ipsum neque illo quae commodi nulla optio velit, consequuntur quo eaque enim nam eligendi veniam minus voluptatum facere unde doloribus. Architecto recusandae sequi repellat earum officiis unde placeat soluta, est nisi exercitationem veritatis perferendis, obcaecati odit qui.
+            </p>
+          </div>
+          <i class="fa-solid fa-flag"></i>
+        </div>
+      </div>
+      <!--  -->
+       <!--  -->
+       <div>
+        <div class="notification-body-modal-div comment-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div class="comment-modal-text-div">
+            <h4 class="notification-modal-h4">
+              Maimuna Islam Momena
+              <span class="notification-modal-date"
+                ><span class="comment">Comment</span> 29 june 23 at 4.31
+                pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore sapiente eveniet id ipsum neque illo quae commodi nulla optio velit, consequuntur quo eaque enim nam eligendi veniam minus voluptatum facere unde doloribus. Architecto recusandae sequi repellat earum officiis unde placeat soluta, est nisi exercitationem veritatis perferendis, obcaecati odit qui.
+            </p>
+          </div>
+          <i class="fa-solid fa-flag"></i>
+        </div>
+      </div>
+      <!--  -->
+       <!--  -->
+       <div>
+        <div class="notification-body-modal-div comment-body-modal-div">
+          <img
+            class="user-img"
+            src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <div class="comment-modal-text-div">
+            <h4 class="notification-modal-h4">
+              Maimuna Islam Momena
+              <span class="notification-modal-date"
+                ><span class="comment">Comment</span> 29 june 23 at 4.31
+                pm</span
+              >
+            </h4>
+            <p class="notification-modal-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore sapiente eveniet id ipsum neque illo quae commodi nulla optio velit, consequuntur quo eaque enim nam eligendi veniam minus voluptatum facere unde doloribus. Architecto recusandae sequi repellat earum officiis unde placeat soluta, est nisi exercitationem veritatis perferendis, obcaecati odit qui.
+            </p>
+          </div>
+          <i class="fa-solid fa-flag"></i>
+        </div>
+      </div>
+      <!--  -->
+       <!--  -->
+      
+        <div class="comment-load-div">
+          <button class="search-button"><i class="fa-solid fa-arrow-rotate-right circle-arrow-icon"></i></button>
+             <h4 class="notification-modal-h4">Load More 236 comments</h4>
+            
+         
+         
+        </div>
+      
+      <!--  -->
+       
+    </div>
+<!-- comment modal footer -->
+    <div class="modal-footer-main-parent-div">
+      <div class="modal-footer-parent-div">
+        <img
+              class="comment-footer-user-img"
+              src="https://images.unsplash.com/photo-1574701148212-8518049c7b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJldHR5JTIwZ2lybHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+              alt=""
+            />
+            
+             
+              <input type="text" class="comment-modal-search-input" placeholder="Type Comment...">
+           
+            <button class="search-button"><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <!-- end comment modal footer -->
+    </div>
+    <!-- Comment Modal End -->
+
+    <!-- User modal Start -->
+    <div id="user-modal-parent-div" class="user-modal-parent-div">
+      
+      <div class="user-modal-first-fex-div">
+        <div class="user-modal-second-fex-div">
+          <i class="fa-solid fa-user user-modal-user-icon"></i>
+          <p class="account">Account</p>
+        </div>
+        <i id="user-crose-icon" class="fa-solid fa-xmark user-modal-cros-icon"></i>
+      </div>
+
+      <div class="user-modal-button-div">
+        <button>
+          <img class="user-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt="">
+          <p>Continue With Google</p>
+        </button>
+        <button class="apple-btn">
+          <img class="user-logo" src="https://www.edigitalagency.com.au/wp-content/uploads/apple-logo-png-black.png" alt="">
+          <p>Continue With Apple</p>
+        </button>
+      </div>
+    </div>
+    <!-- User modal End -->
+
+    <!-- Report Modal start -->
+    <div id="report-modal-parent-div" class="report-modal-parent-div">
+      <div class="user-modal-first-fex-div">
+        <div class="user-modal-second-fex-div">
+          <i class="fa-solid fa-flag user-modal-user-icon"></i>
+          <p class="account">Report</p>
+        </div>
+        <i id="report-crose-icon" class="fa-solid fa-xmark user-modal-cros-icon"></i>
+      </div>
+
+      <div class="report-write-and-send-div">
+        <input class="report-input" type="text" placeholder="Type Your Report"><button class="report-send-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+      </div>
+    </div>
+    <!-- Report Modal End -->
+
+    <!-- Area Modal start -->
+    <div id="area-modal-parent-div" class="area-modal-parent-div">
+      <div class="area-modal-first-fex-div">
+        <div class="area-modal-second-fex-div">
+          <i class="fa-solid fa-comment-dots area-comment-icon"></i>
+          <p class="areaCode">Area Code</p>
+        </div>
+        <i id="area-crose-icon" class="fa-solid fa-xmark user-modal-cros-icon"></i>
+      </div>
+
+      <div class="area-write-and-send-div">
+        <input class="area-input" type="text" placeholder="Zip Code"><button class="area-send-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+      </div>
+    </div>
+    <!-- Area Modal End -->
+
+
+    <!-- Country All modal Start -->
+    <div class="country-all-parent-div">
+      <div class="country-cross-flex-div">
+        <div class="country-cross-flex-child-div">
+          <i class="fa-solid fa-comment-dots"></i>
+        <p class="country">Country</p>
+        </div>
+        <i class="fa-solid fa-xmark user-modal-cros-icon"></i>
+      </div>
+
+ <div class="country-accroding-div">
+  <details>
+    <summary>All</summary>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, cupiditate.</p>
+    </div>
+  </details>
+  <details>
+    <summary>All</summary>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, cupiditate.</p>
+    </div>
+  </details>
+  <details>
+    <summary>All</summary>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, cupiditate.</p>
+    </div>
+  </details>
+ </div>
+        
+        
+ 
+    </div>
+    <!-- Country All modal End -->
+  </body>
 </html>
