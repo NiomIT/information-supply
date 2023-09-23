@@ -141,4 +141,23 @@ countryCrossBtn.addEventListener("click", () => {
   countryAllParentDiv.style.display = "none";
   body.style.filter = "blur(0px)";
 });
+// Country All Modal end //
+
+// Post view modal start //
+const recentAcctivety = document.getElementById("recent-acctivety");
+const postViewParentDiv = document.getElementById("post-view-parent-div");
+
+const postViewCross = document.getElementById("post-view-cross");
+
+recentAcctivety.addEventListener("click", () => {
+  postViewParentDiv.style.display = "block";
+  body.style.filter = "blur(3px)";
+});
+
+postViewCross.addEventListener("click", () => {
+  postViewParentDiv.style.display = "none";
+  body.style.filter = "blur(0px)";
+});
+// Post view modal end//
+
 // Country All Modal End //

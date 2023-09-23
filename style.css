@@ -564,6 +564,47 @@
 
 /* Country All Modal End */
 
+/* Post View modal Start */
+.post-view-parent-div {
+  width: 75%;
+  margin: auto;
+  margin-top: -600px;
+  z-index: 1;
+  position: relative;
+  background-color: white;
+  height: 200px;
+  box-shadow: 2px 1px 20px 1px rgb(145, 145, 145);
+  display: none;
+}
+.post-view-first-flex-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 233);
+  height: 15px;
+  padding: 5px;
+}
+.post-view-second-flex-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post-view-cross-btn {
+  font-size: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.post-view-select {
+  display: block;
+  width: 75%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Post View modal End */
+
 /* End Modal style */
 @media screen and (max-width: 850px) {
   .search-container {
