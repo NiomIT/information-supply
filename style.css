@@ -1,8 +1,7 @@
 #body {
   position: arelative;
 }
-.two-nav-in-one-cart {
-}
+
 .search-container {
   display: flex;
   justify-content: center;
@@ -88,8 +87,7 @@
   height: 500px;
 }
 
-.search-container {
-}
+
 .in-div {
   background-color: rgb(233, 232, 232);
   width: 60px;
@@ -610,8 +608,7 @@ input[type="file"] {
 
 /* End Modal style */
 @media screen and (max-width: 850px) {
-  .search-container {
-  }
+ 
   .in-div {
     background-color: rgb(233, 232, 232);
     width: 60px;
@@ -655,8 +652,7 @@ input[type="file"] {
     cursor: pointer;
     background-color: rgb(231, 229, 229);
   }
-  .second-nav-img {
-  }
+ 
   /*  */
 
   .fa-share-btn {
