@@ -163,10 +163,20 @@ postViewCross.addEventListener("click", () => {
 // Gallery image load function start //
 const inputFile = document.getElementById("input-file");
 const galleryImg = document.getElementById("gallery-img");
+const galleryImgParentDiv = document.getElementById("gallery-img-parent-div");
+const galleryCrossIcone = document.getElementById("gallery-cross-icone");
 
 inputFile.onchange = function () {
   galleryImg.src = URL.createObjectURL(inputFile.files[0]);
 };
+
+inputFile.addEventListener("click", () => {
+  galleryImgParentDiv.style.display = "block";
+});
+
+galleryCrossIcone.addEventListener("click", () => {
+  galleryImgParentDiv.style.display = "none";
+});
 // Gallery image load function end //
 
 // Country All Modal End //
