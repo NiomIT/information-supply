@@ -16,7 +16,7 @@
 
 .user-img {
   width: 40px;
-  height: 57px;
+  height: 40px;
   margin-top: 2px;
 }
 .blank-div {
@@ -61,12 +61,12 @@
   margin-bottom: -20px;
 }
 .user-name {
-  font-size: 25px;
+  font-size: 18px;
   color: rgb(1, 183, 255);
 }
 .post-date {
-  font-size: 10px;
-  color: gray;
+  font-size: 12px;
+  color: red;
 }
 /*  */
 .cart-paragraph {
@@ -83,8 +83,8 @@
   text-align: center;
 }
 .cart-img-div img {
-  width: 400px;
-  height: 500px;
+  width: auto;
+  height: 400px;
 }
 
 
