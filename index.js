@@ -179,4 +179,22 @@ galleryCrossIcone.addEventListener("click", () => {
 });
 // Gallery image load function end //
 
+// In function start //
+const inDiv = document.getElementById("in-div");
+const editProfileParentDiv = document.getElementById("edit-profile-parent-div");
+const editProfileModalCrossIcon = document.getElementById(
+  "edit-profile-modal-cross-icon"
+);
+
+inDiv.addEventListener("click", () => {
+  editProfileParentDiv.style.display = "block";
+  body.style.filter = "blur(3px)";
+});
+
+editProfileModalCrossIcon.addEventListener("click", () => {
+  editProfileParentDiv.style.display = "none";
+  body.style.filter = "blur(0px)";
+});
+// In function End //
+
 // Country All Modal End //

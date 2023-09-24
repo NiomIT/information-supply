@@ -1,22 +1,31 @@
 #body {
 }
 
+.two-nav-in-one-cart {
+}
 .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   padding: 15px;
 }
+
 .border {
   border-bottom: 3px solid red;
 }
-
+.user-img-div {
+  background-color: rgb(218, 218, 218);
+  width: 60px;
+  cursor: pointer;
+  margin-left: 25px;
+  text-align: center;
+}
 .user-img {
   width: 40px;
   height: 40px;
-  margin-top: 2px;
+  margin-top: 10px;
 }
 .blank-div {
   height: 2px;
@@ -60,6 +69,8 @@
   text-align: center;
   margin-bottom: 10px;
   display: none;
+  margin: auto;
+  margin-bottom: 20px;
 }
 .gallery-cross-div {
   display: flex;
@@ -113,7 +124,7 @@
   text-align: center;
 }
 .cart-img-div img {
-  width: auto;
+  width: 50%;
   height: 400px;
 }
 
@@ -122,10 +133,11 @@
   width: 60px;
   height: 60px;
   text-align: center;
+  cursor: pointer;
 }
+
 .in-div h1 {
   color: red;
-  margin-top: 15px;
 }
 .search-input-div {
   display: flex;
@@ -159,7 +171,9 @@ input[type="file"] {
 }
 .setting-icon-div {
   padding: 20px;
+  cursor: pointer;
   background-color: rgb(231, 229, 229);
+  margin-left: 25px;
 }
 /*  */
 
@@ -213,7 +227,7 @@ input[type="file"] {
 }
 
 .search-input-div-two {
-  margin-left: 10px;
+  width: 100%;
 }
 
 /* Style for Modal */
@@ -635,6 +649,79 @@ input[type="file"] {
 
 /* Post View modal End */
 
+/* Edit Profile modal Start */
+.edit-profile-parent-div {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+  margin-top: -650px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 5px 5px 100px rgb(197, 197, 197);
+  display: none;
+}
+.edit-profile-first-modal-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(224, 223, 223);
+  height: 20px;
+  padding: 5px;
+}
+
+.edit-profile-second-modal-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-profile-modal-cross-icon {
+  font-size: 35px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.input-img-and-btn-div {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.edit-modal-img-div {
+  background-color: rgb(219, 219, 219);
+  width: 60px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.edit-img-cross-icon {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 5%;
+  font-size: 25px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.edit-modal-input {
+  width: 65%;
+  margin: 10px;
+  padding: 15px;
+}
+.edit-save-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  width: 30%;
+  background-color: rgb(191, 253, 191);
+  border: none;
+}
+.edit-save-btn i {
+  font-size: 20px;
+}
+.edit-save-btn p {
+  font-size: 15px;
+}
+/* Edit Profile modal  End*/
+
 /* End Modal style */
 @media screen and (max-width: 850px) {
   .in-div {
@@ -675,11 +762,6 @@ input[type="file"] {
     background-color: rgb(231, 229, 229);
     margin-left: 25px;
   }
-  .setting-icon-div {
-    padding: 20px;
-    cursor: pointer;
-    background-color: rgb(231, 229, 229);
-  }
 
   /*  */
 
@@ -688,5 +770,207 @@ input[type="file"] {
     background-color: rgb(231, 229, 229);
 
     border: none;
+  }
+
+  .user-img-div-for-nav {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .user-img-div-for-nav {
+    width: 85px;
+  }
+  .cart-img-div {
+    /* width: 100%; */
+  }
+  .cart-img {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .search-container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .user-img-div-for-nav {
+    width: 115px;
+  }
+  .like-button {
+    font-size: 12px;
+  }
+  .comment-button {
+    font-size: 12px;
+  }
+  .report-button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .search-container {
+    width: 100%;
+    padding: 5px;
+  }
+  .in-div {
+    width: 60px;
+    height: 60px;
+  }
+  .user-img-div-for-nav {
+    width: 150px;
+  }
+
+  .search-input {
+    height: 14px;
+    width: 100%;
+  }
+
+  .search-button {
+    height: 58px;
+    width: 60px;
+  }
+
+  .like-button {
+    font-size: 10px;
+  }
+  .comment-button {
+    font-size: 10px;
+  }
+  .report-button {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .search-container {
+  }
+  .border {
+  }
+  .in-div {
+    width: 50px;
+    height: 50px;
+  }
+  .user-img-div-for-nav {
+    width: 55px;
+    height: 50px;
+  }
+
+  .search-input {
+    height: 6px;
+    width: 90px;
+  }
+
+  .search-button {
+    height: 50px;
+    width: 50px;
+  }
+  .bell-icon-div {
+    width: 15px;
+    height: 10px;
+  }
+  .plane-icon-div {
+    width: 15px;
+    height: 10px;
+  }
+
+  .setting-icon-div {
+    width: 15px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .search-container {
+    gap: 10px;
+    justify-content: center;
+  }
+  .border {
+  }
+  .in-div {
+    width: 50px;
+    height: 46px;
+    font-size: 12px;
+  }
+  .second-nav-img {
+    height: 35px;
+  }
+  .user-img-div-for-nav {
+    width: 55px;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .search-input {
+    height: 3px;
+    width: 100px;
+  }
+
+  .search-button {
+    height: 47px;
+    width: 50px;
+  }
+  .bell-icon-div {
+    width: 12px;
+    height: 8px;
+    margin-left: 10px;
+  }
+  .plane-icon-div {
+    width: 12px;
+    height: 8px;
+    margin-left: 10px;
+  }
+
+  .setting-icon-div {
+    width: 12px;
+    height: 8px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .search-container {
+    gap: 10px;
+    justify-content: center;
+  }
+  .border {
+  }
+  .in-div {
+    width: 50px;
+    height: 43px;
+    font-size: 12px;
+  }
+
+  .user-img-div-for-nav {
+    width: 55px;
+    height: 45px;
+    margin-left: 10px;
+  }
+  .user-img-for-first-nav {
+    height: 34px;
+  }
+  .second-nav-img {
+    height: 32px;
+  }
+  .search-input {
+    height: 1px;
+    width: 80px;
+  }
+
+  .search-button {
+    height: 45px;
+    width: 50px;
+  }
+  .bell-icon-div {
+    width: 10px;
+    height: 5px;
+    margin-left: 10px;
+  }
+  .plane-icon-div {
+    width: 10px;
+    height: 5px;
+    margin-left: 10px;
+  }
+
+  .setting-icon-div {
+    width: 10px;
+    height: 5px;
+    margin-left: 10px;
   }
 }
