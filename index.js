@@ -160,4 +160,13 @@ postViewCross.addEventListener("click", () => {
 });
 // Post view modal end//
 
+// Gallery image load function start //
+const inputFile = document.getElementById("input-file");
+const galleryImg = document.getElementById("gallery-img");
+
+inputFile.onchange = function () {
+  galleryImg.src = URL.createObjectURL(inputFile.files[0]);
+};
+// Gallery image load function end //
+
 // Country All Modal End //

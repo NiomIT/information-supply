@@ -1,5 +1,4 @@
 #body {
-  position: arelative;
 }
 .two-nav-in-one-cart {
 }
@@ -49,6 +48,36 @@
   font-size: 12px;
   margin-top: -20px;
 }
+
+/* Gallery image start */
+.gallery-img {
+  width: 40%;
+  height: 300px;
+}
+.gallery-img-parent-div {
+  background-color: rgb(233, 233, 233);
+  width: 60%;
+  margin-left: 105px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.gallery-cross-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  background-color: gray;
+  height: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.gallery-cross-icone {
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: 500;
+}
+/* Gallery image end */
+
 .new-post-button {
   display: flex;
   align-items: center;
