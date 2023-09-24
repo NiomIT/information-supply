@@ -1,7 +1,6 @@
 #body {
 }
-.two-nav-in-one-cart {
-}
+
 .search-container {
   display: flex;
   justify-content: center;
@@ -16,7 +15,7 @@
 
 .user-img {
   width: 40px;
-  height: 57px;
+  height: 40px;
   margin-top: 2px;
 }
 .blank-div {
@@ -91,12 +90,12 @@
   margin-bottom: -20px;
 }
 .user-name {
-  font-size: 25px;
+  font-size: 18px;
   color: rgb(1, 183, 255);
 }
 .post-date {
-  font-size: 10px;
-  color: gray;
+  font-size: 12px;
+  color: red;
 }
 /*  */
 .cart-paragraph {
@@ -113,12 +112,11 @@
   text-align: center;
 }
 .cart-img-div img {
-  width: 400px;
-  height: 500px;
+  width: auto;
+  height: 400px;
 }
 
-.search-container {
-}
+
 .in-div {
   background-color: rgb(233, 232, 232);
   width: 60px;
@@ -639,8 +637,7 @@ input[type="file"] {
 
 /* End Modal style */
 @media screen and (max-width: 850px) {
-  .search-container {
-  }
+ 
   .in-div {
     background-color: rgb(233, 232, 232);
     width: 60px;
@@ -684,8 +681,7 @@ input[type="file"] {
     cursor: pointer;
     background-color: rgb(231, 229, 229);
   }
-  .second-nav-img {
-  }
+ 
   /*  */
 
   .fa-share-btn {
