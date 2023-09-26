@@ -13,9 +13,11 @@ const notificationCloseIcon = document.getElementById(
 
 bellIDiv.addEventListener("click", () => {
   notificationParentDiv.style.display = "block";
+  main.style.filter = "blur(3px)";
 });
 notificationCloseIcon.addEventListener("click", () => {
   notificationParentDiv.style.display = "none";
+  main.style.filter = "blur(0px)";
 });
 // Notification end //
 
@@ -28,10 +30,12 @@ const userLoginCloseIcon = document.getElementById("user-login-close-icon");
 
 userBadhonImgDiv.addEventListener("click", () => {
   userLoginAccount.style.display = "block";
+  main.style.filter = "blur(3px)";
 });
 
 userLoginCloseIcon.addEventListener("click", () => {
   userLoginAccount.style.display = "none";
+  main.style.filter = "blur(0px)";
 });
 // -----------User Login End------------//
 
@@ -45,10 +49,12 @@ const editProfileModalCrossIcon = document.getElementById(
 
 inDiv.addEventListener("click", () => {
   editProfileParentDiv.style.display = "block";
+  main.style.filter = "blur(3px)";
 });
 
 editProfileModalCrossIcon.addEventListener("click", () => {
   editProfileParentDiv.style.display = "none";
+  main.style.filter = "blur(0px)";
 });
 // ----------IN Logo End------------//
 

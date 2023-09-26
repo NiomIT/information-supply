@@ -1110,9 +1110,9 @@
 
 /* notification modal start */
 .notification-parent-div {
-  width: 50%;
+  width: 65%;
   margin: auto;
-  margin-top: -550px;
+  margin-top: -650px;
   z-index: 1;
   position: relative;
 
@@ -1178,10 +1178,10 @@
 
 /* -------- User Login Account Start --------- */
 .user-login-accoutn-parent-div {
-  width: 50%;
+  width: 65%;
   margin: auto;
   background-color: white;
-  margin-top: -700px;
+  margin-top: -600px;
   position: relative;
   z-index: 1;
   box-shadow: 10px 10px 20px rgb(124, 124, 124);
@@ -1235,7 +1235,7 @@
   width: 60%;
   margin: auto;
   text-align: center;
-  margin-top: -670px;
+  margin-top: -650px;
   position: relative;
   z-index: 1;
   box-shadow: 5px 5px 100px rgb(197, 197, 197);
@@ -1412,6 +1412,65 @@
 /* ---------Area Code modal End ------------ */
 
 /* Modal section end */
+
+/* ---------Area modal responsive start ------------ */
+@media screen and (max-width: 612px) {
+  .area-write-and-send-div {
+    width: 90%;
+  }
+  .area-input {
+    width: 70%;
+    height: 40px;
+    padding: 5px;
+  }
+  .area-send-btn {
+    height: 40px;
+    width: 45px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .area-write-and-send-div {
+    width: 100%;
+  }
+  .area-input {
+    width: 75%;
+    height: 40px;
+    padding: 5px;
+  }
+  .area-send-btn {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media screen and (max-width: 393px) {
+  .area-write-and-send-div {
+    width: 100%;
+  }
+  .area-input {
+    width: 70%;
+    height: 40px;
+    padding: 5px;
+  }
+  .area-send-btn {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .area-write-and-send-div {
+    width: 100%;
+  }
+  .area-input {
+    width: 65%;
+    height: 40px;
+    padding: 5px;
+  }
+  .area-send-btn {
+    height: 40px;
+    width: 40px;
+  }
+}
+/* ---------Area modal responsive End ------------ */
 
 /*----------Setting Modal Responsive start--------*/
 @media screen and (max-width: 1230px) {
