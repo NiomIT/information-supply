@@ -1,5 +1,6 @@
 const header = document.getElementById("header");
 const main = document.getElementById("main");
+const body = document.getElementById("body");
 
 // Notification start //
 const bellIDiv = document.getElementById("bell-i-div");
@@ -62,5 +63,60 @@ settingIconDiv.addEventListener("click", () => {
 
 modalCloseButton.addEventListener("click", () => {
   settingsModalDiv.style.display = "none";
+  main.style.filter = "blur(0px)";
 });
 // ------------Setting icon end------------//
+
+// -------- Post View Recent Acctivety start ----------//
+const recentAcctivety = document.getElementById("recent-acctivety");
+const postViewParentDiv = document.getElementById("post-view-parent-div");
+const postViewCross = document.getElementById("post-view-cross");
+
+recentAcctivety.addEventListener("click", () => {
+  postViewParentDiv.style.display = "block";
+  main.style.filter = "blur(2px)";
+  settingsModalDiv.style.filter = "blur(2px)";
+});
+
+postViewCross.addEventListener("click", () => {
+  postViewParentDiv.style.display = "none";
+  main.style.filter = "blur(0px)";
+  settingsModalDiv.style.filter = "blur(0px)";
+});
+// -------- Post View Recent Acctivety end ----------//
+
+// --------------Country All start------------- //
+const countryAll = document.getElementById("country-all");
+const countryAllParentDiv = document.getElementById("country-all-parent-div");
+const countryAllCross = document.getElementById("country-all-cross");
+
+countryAll.addEventListener("click", () => {
+  countryAllParentDiv.style.display = "block";
+  main.style.filter = "blur(2px)";
+  settingsModalDiv.style.filter = "blur(2px)";
+});
+
+countryAllCross.addEventListener("click", () => {
+  countryAllParentDiv.style.display = "none";
+  main.style.filter = "blur(0px)";
+  settingsModalDiv.style.filter = "blur(0px)";
+});
+// --------------Country All end------------- //
+
+// -----------Area Code Start-----------//
+const areaCode = document.getElementById("area-code");
+const areaCodeParentDiv = document.getElementById("area-code-parent-div");
+const areaCodeCorssBtn = document.getElementById("area-code-cross-btn");
+
+areaCode.addEventListener("click", () => {
+  areaCodeParentDiv.style.display = "block";
+  main.style.filter = "blur(2px)";
+  settingsModalDiv.style.filter = "blur(2px)";
+});
+
+areaCodeCorssBtn.addEventListener("click", () => {
+  areaCodeParentDiv.style.display = "none";
+  main.style.filter = "blur(0px)";
+  settingsModalDiv.style.filter = "blur(0px)";
+});
+// -----------Area Code End-----------//

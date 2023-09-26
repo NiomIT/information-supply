@@ -1348,6 +1348,69 @@
 }
 /*--------------Setting modal end-------------*/
 
+/* ---------- Post View Modal Start ---------- */
+.post-view-parent-div {
+  width: 65%;
+  margin: auto;
+  margin-top: 100px;
+  z-index: 1;
+  position: relative;
+  background-color: white;
+  height: 200px;
+  box-shadow: 2px 1px 20px 1px rgb(145, 145, 145);
+  display: none;
+}
+.post-view-first-flex-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(233, 233, 233);
+  height: 25px;
+  padding: 5px;
+}
+.post-view-second-flex-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post-view-cross-btn {
+  font-size: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.post-view-select {
+  display: block;
+  width: 75%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* ---------- Post View Modal end ---------- */
+
+/* ---------Area Code modal Start ------------ */
+.area-write-and-send-div {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+}
+.area-input {
+  width: 75%;
+  height: 43px;
+  padding: 10px;
+  border: 2px solid rgb(226, 226, 226);
+}
+.area-send-btn {
+  margin-top: 0;
+  height: 43px;
+  width: 50px;
+  border: 2px solid rgb(226, 226, 226);
+}
+/* ---------Area Code modal End ------------ */
+
 /* Modal section end */
 
 /*----------Setting Modal Responsive start--------*/
